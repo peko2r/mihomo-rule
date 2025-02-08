@@ -1,0 +1,35 @@
+payload:
+  - DOMAIN,pphimalayanrt.com
+  - PROCESS-NAME,gamingservices.exe
+  - PROCESS-NAME,RiotClientServices.exe
+  - PROCESS-NAME,完美世界竞技平台.exe
+  - PROCESS-NAME,cs2.exe
+  - DOMAIN-KEYWORD,valorant
+  - DOMAIN-KEYWORD,Riot
+  - DOMAIN,ipv4.egdownload.fastly-edge.com
+  - IP-CIDR,115.238.185.234/32
+  - IP-CIDR,23.49.104.184/32
+  - DOMAIN,ssl.ptlogin2.qq.com
+  - DOMAIN,dhs752jdkpq3ns.catlinks.co.uk
+  - PROCESS-NAME,TASLogin64.exe
+  - PROCESS-NAME,NMS.exe
+  - PROCESS-NAME,CrossProxy.exe
+  - PROCESS-NAME,UnrealCEFSubProcess.exe
+  - PROCESS-NAME,vgtray.exe
+  - PROCESS-NAME,RvControlSvc.exe
+  - PROCESS-NAME,Plain Craft Launcher 2.exe
+  - PROCESS-NAME,javaw.exe
+  - PROCESS-NAME,RvRvpnGui.exe
+  - DOMAIN-KEYWORD,bitcomet
+  - PROCESS-NAME,qbittorrent.exe
+  - PROCESS-NAME,SCUM.exe
+  - PROCESS-NAME,scum_launcher.exe
+  - PROCESS-NAME,leishenSdk.exe
+  - PROCESS-NAME,GameBarPresenceWriter.exe
+  - DOMAIN,tdck.fun
+  - PROCESS-NAME,QQ.exe
+  - PROCESS-NAME,WeMeetApp.exe
+  - PROCESS-NAME,WMExternal.exe
+  - PROCESS-NAME,HeyboxChat.exe
+  - DOMAIN,service-aggregation-layer-subs.juno.ea.com
+  - DOMAIN,cn.download.nvidia.com
