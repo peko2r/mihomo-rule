@@ -65,8 +65,6 @@ payload:
   - DOMAIN,pub3.emby.wtf
   - DOMAIN,pub3cf.emby.wtf
   - DOMAIN,pub3.term.wtf
-#Infinity
-  - DOMAIN,vx.infinityfly.top
 #Pilipili
   - DOMAIN,pilipili.club
   - DOMAIN,css.pilipili.club:443
