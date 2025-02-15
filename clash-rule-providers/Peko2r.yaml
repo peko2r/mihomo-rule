@@ -45,7 +45,7 @@ sniffer:
   enable: true
   force-dns-mapping: true
   parse-pure-ip: true
-  override-destination: true
+  override-destination: false
   sniff:
     HTTP:
       ports: [80, 8080-8880]
@@ -93,204 +93,84 @@ dns:
     - "https://dns.cloudflare.com/dns-query"
     - "https://dns.google/dns-query"
 
-
 proxies:
 proxy-groups-config:
   Streamf: &Streamf "(?=.*JP)(?=.*YXVM)|(?=.*US)(?=.*xTom)"
   Embyf: &Embyf "(?=.*HK)(?=.*Claw)|HK-A-YXVM-0.1倍率|US-A-Sixty-0.1倍率|SG-A-YXVM-1.0倍率"
-  HK: &HK "香港|(?=.*Hong Kong)(?=.*TKV)"
-  SG: &SG "新加坡|(?=.*Singapore)(?=.*TKV)|(?=.*Singapore)(?=.*0.2)"
-  JP: &JP "日本|(?=.*Japan)(?=.*TKV)"
-  TW: &TW "台湾|(?=.*Taiwan)(?=.*TKV)"
-  US: &US "美国|(?=.*United States)(?=.*TKV)|(?=.*US)(?=.*0.1)|(?=.*US)(?=.*0.5)|(?=.*US)(?=.*0.5)|(?=.*US)(?=.*0.8)"
-  EU: &EU "荷兰|德国"
-  KR: &KR "韩国"
-  HKIPLC: &HKIPLC "深港|(?=.*Hong Kong)(?=.*IPLC)(?=.*512)|HKBN"
-  SGIPLC: &SGIPLC "(?=.*Singapore)(?=.*IPLC)(?=.*512)"
-  JPIPLC: &JPIPLC "(?=.*Japan)(?=.*沪IPLC)(?=.*512)"
-  TWIPLC: &TWIPLC "(?=.*Taiwan)(?=.*IPLC)(?=.*512)"
-  USIPLC: &USIPLC "(?=.*United States)(?=.*沪IPLC)(?=.*512)"
-  Ayanami_512G: &Ayanami_512G "512"
+  HK: &HK "(?=.*HongKong)(?=.*0.2)(?=.*𝒜𝓎𝒶)|(?=.*Hong Kong)(?=.*0.4)(?=.*𝒜𝓎𝒶)|(?=.*HK)(?=.*ᏟͲᏟ2)"
+  SG: &SG "(?=.*Singapore)(?=.*0.2)(?=.*𝒜𝓎𝒶)|(?=.*SG)(?=.*ᏟͲᏟ2)"
+  JP: &JP "(?=.*JP)(?=.*ᏟͲᏟ2)"
+  TW: &TW "(?=.*Taiwan)(?=.*0.2)(?=.*𝒜𝓎𝒶)|(?=.*Taiwan)(?=.*0.4)(?=.*𝒜𝓎𝒶)|(?=.*TW)(?=.*ᏟͲᏟ2)"
+  US: &US "(?=.*United States)(?=.*TKV)|(?=.*US)(?=.*ᏟͲᏟ2)"
+  EU: &EU "(?=.*DE)(?=.*ᏟͲᏟ2)|(?=.*NL)(?=.*ᏟͲᏟ2)"
+  KR: &KR ""
+  HKIPLC: &HKIPLC "深港|(?=.*Hong Kong)(?=.*IPLC)(?=.*𝒜𝓎𝒶)|HKBN"
+  SGIPLC: &SGIPLC "(?=.*Singapore)(?=.*IPLC)(?=.*𝒜𝓎𝒶)"
+  JPIPLC: &JPIPLC "(?=.*Japan)(?=.*沪IPLC)(?=.*𝒜𝓎𝒶)"
+  TWIPLC: &TWIPLC "(?=.*Taiwan)(?=.*IPLC)(?=.*𝒜𝓎𝒶)"
+  USIPLC: &USIPLC "(?=.*United States)(?=.*沪IPLC)(?=.*𝒜𝓎𝒶)"
+  Ayanami_512G: &Ayanami_512G "𝒜𝓎𝒶"
   CTC-02: &CTC-02 "ᏟͲᏟ2"
-  TKV: &TKV "TKV"
-  p: &p { interval: 300, tolerance: 60, include-all-providers: true, url: 'http://connectivitycheck.gstatic.com/generate_204', lazy: true}
+  p: &p { interval: 300, tolerance: 60, include-all-providers: true, url: 'http://www.google.com/generate_204', lazy: true}
 
 proxy-providers:
   PEKO1:
     type: http
-    url: https://sub.sesexiaozhan.top/api/v1/client/subscribe?token=ff719778072b82d7b517d20a071eb569
+    url: 
     interval: 86400
     override:
-      additional-suffix: " [512]❀𝒜𝓎𝒶𝓃𝒶𝓂𝒾❀"
+      additional-suffix: " ❀𝒜𝓎𝒶𝓃𝒶𝓂𝒾❀"
       proxy-name:
-      - pattern: "沪日"
-        target: "沪"
-      - pattern: " 0.2"
-        target: "0.2"
-      - pattern: "  IPLC"
-        target: "IPLC"
+      - {pattern: "沪日", target: "沪"} 
+      - {pattern: " 0.2", target: "0.2"}
+      - {pattern: "  IPLC", target: "IPLC"}
     exclude-filter: "剩余流量|套餐到期"
     exclude-type:      #不支持正则表达式，通过 | 分割，根据节点类型排除
     path:
 
   PEKO2:
     type: http
-    url: https://47.115.49.124:9999/api/v1/client/subscribe?token=70a186fc831facb41e92e54d71a23a93
+    url: 
     interval: 86400
     override:
       additional-suffix: " ❀ᏟͲᏟ2❀"
+      proxy-name:
     exclude-filter: "2.0|10.0|1.5"
     exclude-type:
     path:
 
-  PEKO3:
-    type: http
-    url: https://portal.tkv.one/modules/servers/V2RaySocks/subscribe/?sid=5102&token=b1e8e65f24c5&app=clashmeta
-    interval: 86400
-    override:
-      additional-suffix: " TKV"
-    exclude-filter:
-    exclude-type:
-    path:
-
 proxy-groups:
-  - {
-    name: Proxy,
-    type: select,
-    proxies: [HK, JP, TW, SG, US, EU, KR, SG IPLC, JP IPLC, TW IPLC, HK IPLC, US IPLC, select1, select2, DIRECT], 
-    icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Proxy.png}
-  - {
-    name: Stream,
-    type: select,
-    proxies: [Stream专用, HK, JP, TW, US, EU, KR, SG IPLC, select1, select2],
-    icon: https://ghfast.top/raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Streaming.png}
-  - {
-    name: Telegram,
-    type: select,
-    proxies: [SG, SG IPLC, HK,JP, TW, US, EU, KR, select1, select2],
-    icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Telegram.png}
-  - {
-    name: Twitter,
-    type: select,
-    proxies: [SG, SG IPLC, HK,JP, TW, US, EU, KR, select1, select2],
-    icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Twitter.png}
-  - {
-    name: Emby,
-    type: select,
-    proxies: [Emby专用, Stream专用, DIRECT, SG, HK, JP, TW, US, EU, KR, select1, select2],
-    icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Emby.png}
-  - {
-    name: OpenAi,
-    type: select,
-    proxies: [US IPLC, US, JP IPLC, HK IPLC, SG IPLC, TW, HK, JP, SG, KR, select1, select2],
-    icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/OpenAI.png}
-  - {
-    name: Spotify,
-    type: select,
-    proxies: [US, DIRECT, TW, HK IPLC, HK, JP, SG, KR, select1, select2],
-    icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Spotify.png}
-  - {
-    name: Game,
-    type: select,
-    proxies: [HK, DIRECT, TW, JP, SG, US, KR, Proxy, select1, select2], 
-    icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Game.png}
-  - {
-    name: E-h,
-    type: select,
-    proxies: [Proxy, US, TW IPLC, HK IPLC, JP IPLC, SG IPLC, US IPLC, DIRECT, select1, select2], 
-    icon: https://ghfast.top/raw.githubusercontent.com/peko2rr/mihomo-rule/master/icon/E-Hentai.png}
-  - {
-    name: Google,
-    type: select,
-    proxies: [HK, US IPLC, SG, US, TW, JP, KR, select1, select2], 
-    icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Google.png}
-  - {
-    name: YouTube,
-    type: select,
-    proxies: [Stream, TW, HK, JP, SG, US, KR, select1, select2], 
-    icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Youtube.png}
-  - {
-    name: AI,
-    type: select,
-    proxies: [US, JP IPLC, US IPLC, HK IPLC, SG IPLC, TW, HK, JP, SG, KR, select1, select2],
-    icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/OpenAI.png}
-  - {
-    name: Netflix,
-    type: select,
-    proxies: [Stream, TW, HK, JP, SG, US, KR, select1, select2], 
-    icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Netflix.png,
-    hidden: true}
-  - {
-    name: Twitch,
-    type: select,
-    proxies: [Stream, TW, HK, JP, SG, US, KR, select1, select2], 
-    icon: https://ghfast.top/raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitch.png,
-    hidden: false}
-  - {
-    name: Disney,
-    type: select,
-    proxies: [Stream, TW, HK, JP, SG, US, KR, select1, select2], 
-    icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Disney+.png,
-    hidden: true}
-  - {
-    name: Discord,
-    type: select,
-    proxies: [Proxy, TW, HK, JP, SG, US, KR, select1, select2], 
-    icon: https://ghfast.top/raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Discord.png,
-    hidden: true}
-  - {
-    name: Nintendo,
-    type: select,
-    proxies: [Proxy, TW, HK, JP, SG, US, KR, select1, select2], 
-    icon: https://ghfast.top/raw.githubusercontent.com/peko2rr/mihomo-rule/master/icon/Nintendo.png,
-    hidden: true}
-  - {
-    name: Microsoft,
-    type: select,
-    proxies: [Proxy, TW, HK, JP, HK IPLC, SG, US, KR, select1, select2], 
-    icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Microsoft.png,
-    hidden: true}
-  - {
-    name: Apple,
-    type: select,
-    proxies: [DIRECT, Proxy, TW, HK, JP, SG, US, KR, select1, select2], 
-    icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Apple.png,
-    hidden: true}
-  - {
-    name: Bahamut,
-    type: select,
-    proxies: [TW, HK, JP, SG, US, KR, select1, select2], 
-    icon: https://ghfast.top/raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Bahamut.png,
-    hidden: false}
-  - {
-    name: OneDrive,
-    type: select,
-    proxies: [Proxy,TW, HK, HK IPLC, JP, SG, US, KR, select1, select2], 
-    icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Microsoft.png,
-    hidden: true}
-  - {
-    name: select1,
-    type: select,
-    include-all-providers: true,
-    lazy: true,
-    icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Auto.png,
-    hidden: false}
-  - {
-    name: select2,
-    type: select,
-    include-all-providers: true,
-    lazy: true,
-    icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Auto.png,
-    hidden: false}
-  - {name: Match, type: select, proxies: [DIRECT, Proxy, TW, HK, JP, SG, US, KR, select1, select2], hidden: false, icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Final01.png}
+  - {name: Proxy, type: select, proxies: [HK, JP, TW, SG, US, EU, KR, SG IPLC, JP IPLC, TW IPLC, HK IPLC, US IPLC, select1, select2, DIRECT], icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Proxy.png}
+  - {name: Stream, type: select, proxies: [Stream专用, HK, JP, TW, US, EU, KR, SG IPLC, select1, select2], icon: https://ghfast.top/raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Streaming.png}
+  - {name: Telegram, type: select, proxies: [SG, SG IPLC, HK,JP, TW, US, EU, KR, select1, select2], icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Telegram.png}
+  - {name: Twitter, type: select, proxies: [SG, SG IPLC, HK,JP, TW, US, EU, KR, select1, select2], icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Twitter.png}
+  - {name: Emby, type: select, proxies: [Emby专用, Stream专用, DIRECT, SG, HK, JP, TW, US, EU, KR, select1, select2], icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Emby.png}
+  - {name: OpenAi, type: select, proxies: [US IPLC, US, JP IPLC, HK IPLC, SG IPLC, TW, HK, JP, SG, KR, select1, select2], icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/OpenAI.png}
+  - {name: Spotify, type: select, proxies: [US, DIRECT, TW, HK IPLC, HK, JP, SG, KR, select1, select2], icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Spotify.png}
+  - {name: Game, type: select, proxies: [HK, DIRECT, TW, JP, SG, US, KR, Proxy, select1, select2], icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Game.png}
+  - {name: E-h, type: select, proxies: [Proxy, US, TW IPLC, HK IPLC, JP IPLC, SG IPLC, US IPLC, DIRECT, select1, select2], icon: https://ghfast.top/raw.githubusercontent.com/peko2r/mihomo-rule/master/icon/E-Hentai.png}
+  - {name: Google, type: select, proxies: [HK, US IPLC, SG, US, TW, JP, KR, select1, select2], icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Google.png}
+  - {name: YouTube, type: select, proxies: [Stream, TW, HK, JP, SG, US, KR, select1, select2], icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Youtube.png}
+  - {name: AI, type: select, proxies: [US, JP IPLC, US IPLC, HK IPLC, SG IPLC, TW, HK, JP, SG, KR, select1, select2], icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/OpenAI.png}
+  - {name: Netflix, type: select, proxies: [Stream, TW, HK, JP, SG, US, KR, select1, select2], hidden: true, icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Netflix.png}
+  - {name: Twitch, type: select, proxies: [Stream, TW, HK, JP, SG, US, KR, select1, select2], hidden: false, icon: https://ghfast.top/raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitch.png}
+  - {name: Disney, type: select, proxies: [Stream, TW, HK, JP, SG, US, KR, select1, select2], hidden: true, icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Disney+.png}
+  - {name: Discord, type: select, proxies: [Proxy, TW, HK, JP, SG, US, KR, select1, select2], hidden: true, icon: https://ghfast.top/raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Discord.png}
+  - {name: Microsoft, type: select, proxies: [Proxy, TW, HK, JP, HK IPLC, SG, US, KR, select1, select2], hidden: true, icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Microsoft.png}
+  - {name: Apple, type: select, proxies: [DIRECT, Proxy, TW, HK, JP, SG, US, KR, select1, select2], hidden: true, icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Apple.png}
+  - {name: Bahamut, type: select, proxies: [TW, HK, JP, SG, US, KR, select1, select2], hidden: false, icon: https://ghfast.top/raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Bahamut.png}
+  - {name: OneDrive, type: select, proxies: [Proxy,TW, HK, HK IPLC, JP, SG, US, KR, select1, select2], hidden: true, icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Microsoft.png}
+  - {name: select1, type: select, include-all-providers: true, lazy: true, hidden: false, icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Auto.png}
+  - {name: select2, type: select, include-all-providers: true, lazy: true, hidden: false, icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Auto.png}
+  - {name: Match, type: select, proxies: [Proxy, DIRECT, TW, HK, JP, SG, US, KR, select1, select2], hidden: false, icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Final01.png}
   - {name: Direct, type: select, proxies: [DIRECT, Proxy], hidden: false, icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Direct.png}
   - {name: AD, type: select, proxies: [REJECT, DIRECT], hidden: false, icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/AdBlock.png}
   - {name: Stream专用, !!merge <<: *p, type: url-test, filter: *Streamf, hidden: false, icon: https://ghfast.top/raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Streaming.png}
   - {name: Emby专用, !!merge <<: *p, type: url-test, filter: *Embyf, hidden: false, icon: https://ghfast.top/raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Streaming.png}
-  - {name: HK, !!merge <<: *p, type: url-test, filter: *HK, hidden: false, icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/HK02.png}
+  - {name: HK, !!merge <<: *p, type: fallback, filter: *HK, hidden: false, icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/HK02.png}
   - {name: SG, !!merge <<: *p, type: fallback, filter: *SG, hidden: false, icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/SG.png}
   - {name: JP, !!merge <<: *p, type: url-test, filter: *JP, hidden: true, icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/JP.png}
-  - {name: TW, !!merge <<: *p, type: url-test, filter: *TW, hidden: false, icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/TW.png}
+  - {name: TW, !!merge <<: *p, type: fallback, filter: *TW, hidden: false, icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/TW.png}
   - {name: US, !!merge <<: *p, type: fallback, filter: *US, hidden: false, icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/US.png}
   - {name: EU, !!merge <<: *p, type: url-test, filter: *EU, hidden: true, icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/DE.png}
   - {name: KR, !!merge <<: *p, type: url-test, filter: *KR, hidden: true, icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/KR.png}
@@ -298,10 +178,9 @@ proxy-groups:
   - {name: SG IPLC, !!merge <<: *p, type: fallback, filter: *SGIPLC, hidden: true, icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/SG.png}
   - {name: JP IPLC, !!merge <<: *p, type: fallback, filter: *JPIPLC, hidden: false, icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/JP.png}
   - {name: TW IPLC, !!merge <<: *p, type: fallback, filter: *TWIPLC, hidden: true, icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/TW.png}
-  - {name: US IPLC, !!merge <<: *p, type: fallback, filter: *USIPLC, hidden: false, icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/US.png}
+  - {name: US IPLC, !!merge <<: *p, type: url-test, filter: *USIPLC, hidden: false, icon: https://ghfast.top/raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/US.png}
   - {name: Ayanami_512G, !!merge <<: *p, type: fallback, filter: *Ayanami_512G, hidden: false, icon: https://ghfast.top/raw.githubusercontent.com/black2c7/TheMagic-Icons/main/Icons/Sese.png}
   - {name: CTC-02, !!merge <<: *p, type: fallback, filter: *CTC-02, hidden: false, icon: https://ghfast.top/raw.githubusercontent.com/black2c7/TheMagic-Icons/main/Icons/CTC.png}
-  - {name: TKV, !!merge <<: *p, type: fallback, filter: *TKV, hidden: false, icon: https://ghfast.top/raw.githubusercontent.com/black2c7/TheMagic-Icons/main/Icons/ACA.png}
 
 rule-anchor :
   ip: &ip {type: http, interval: 86400, behavior: ipcidr, format: mrs}
@@ -310,16 +189,16 @@ rule-anchor :
   class: &class {type: http, interval: 86400, behavior: classical}
   
 rule-providers:
-  myself: {!!merge <<: *class, url: "https://ghfast.top/raw.githubusercontent.com/peko2rr/mihomo-rule/master/myself.yaml"}
+  myself: {!!merge <<: *class, url: "https://ghfast.top/raw.githubusercontent.com/peko2r/mihomo-rule/master/myself.yaml"}
   AWAvenue: {!!merge <<: *qcy, url: "https://ghfast.top/raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Clash.yaml"}
-  Emby: {!!merge <<: *class, url: "https://ghfast.top/raw.githubusercontent.com/peko2rr/mihomo-rule/master/Emby.yaml"}
-  E-h: {!!merge <<: *class, url: "https://ghfast.top/raw.githubusercontent.com/peko2rr/mihomo-rule/master/E-h.yaml"}
+  Emby: {!!merge <<: *class, url: "https://ghfast.top/raw.githubusercontent.com/peko2r/mihomo-rule/master/Emby.yaml"}
+  E-h: {!!merge <<: *class, url: "https://ghfast.top/raw.githubusercontent.com/peko2r/mihomo-rule/master/E-h.yaml"}
   OneDrive: {!!merge <<: *domain, url: "https://ghfast.top/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/onedrive.mrs"}
   Telegram: {!!merge <<: *domain, url: "https://ghfast.top/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.mrs"}
   Twitter: {!!merge <<: *domain, url: "https://ghfast.top/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/twitter.mrs"}
   Discord: {!!merge <<: *domain, url: "https://ghfast.top/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/discord.mrs"}
   OpenAi: {!!merge <<: *domain, url: "https://ghfast.top/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/openai.mrs"}
-  AI: {!!merge <<: *class, url: "https://ghfast.top/raw.githubusercontent.com/peko2rr/mihomo-rule/master/AI.yaml"}
+  AI: {!!merge <<: *class, url: "https://ghfast.top/raw.githubusercontent.com/peko2r/mihomo-rule/master/AI.yaml"}
   Game: {!!merge <<: *class, url: "https://ghfast.top/raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Game/Game.yaml"}
   Twitch: {!!merge <<: *class, url: "https://ghfast.top/raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Twitch/Twitch.yaml"}
   YouTube: {!!merge <<: *domain, url: "https://ghfast.top/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"}
@@ -330,17 +209,16 @@ rule-providers:
   Microsoft: {!!merge <<: *domain, url: "https://ghfast.top/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.mrs"}
   Google: {!!merge <<: *domain, url: "https://ghfast.top/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs"}
   Spotify: {!!merge <<: *domain, url: "https://ghfast.top/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/spotify.mrs"}
-  Nintendo: {!!merge <<: *domain, url: "https://ghfast.top/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/nintendo.mrs"}
-  US: {!!merge <<: *class, url: "https://ghfast.top/raw.githubusercontent.com/peko2rr/mihomo-rule/master/US.yaml"}
+  US: {!!merge <<: *class, url: "https://ghfast.top/raw.githubusercontent.com/peko2r/mihomo-rule/master/US.yaml"}
   private: {!!merge <<: *domain, url: "https://ghfast.top/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"}
   SteamCN: {!!merge <<: *domain, url: "https://ghfast.top/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/steam@cn.mrs"}
   GameDownloadCN: {!!merge <<: *class, url: "https://ghfast.top/raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Game/GameDownloadCN/GameDownloadCN.yaml"}
-  Direct: {!!merge <<: *class, url: "https://ghfast.top/raw.githubusercontent.com/peko2rr/mihomo-rule/master/Direct.yaml"}
+  Direct: {!!merge <<: *class, url: "https://ghfast.top/raw.githubusercontent.com/peko2r/mihomo-rule/master/Direct.yaml"}
   proxy: {!!merge <<: *domain, url: "https://ghfast.top/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.mrs"}
   cn_site: {!!merge <<: *domain, url: "https://ghfast.top/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs"}
   Download: {!!merge <<: *class, url: "https://ghfast.top/raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Download/Download.yaml"}
   applications: {!!merge <<: *class, url: "https://ghfast.top/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/applications.txt"}
-  ProxyTest: {!!merge <<: *class, url: "https://ghfast.top/raw.githubusercontent.com/peko2rr/mihomo-rule/refs/heads/master/ProxyTest.yaml"}
+  ProxyTest: {!!merge <<: *class, url: "https://ghfast.top/raw.githubusercontent.com/peko2r/mihomo-rule/refs/heads/master/ProxyTest.yaml"}
   Ad: {!!merge <<: *qcy, url: "https://ghfast.top/raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/AdvertisingLite/AdvertisingLite_Domain.yaml"}
 
   Ad_ip: {!!merge <<: *ip, url: "https://ghfast.top/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/ad.mrs"}
@@ -352,18 +230,18 @@ rule-providers:
 rules:
  - RULE-SET,AWAvenue,AD
  - RULE-SET,applications,DIRECT
+ - RULE-SET,Download,DIRECT
+ - RULE-SET,private,DIRECT
+ - RULE-SET,SteamCN,DIRECT
+ - RULE-SET,GameDownloadCN,DIRECT
+ - RULE-SET,Direct,DIRECT
+ - RULE-SET,myself,Proxy
  - RULE-SET,Telegram,Telegram
  - RULE-SET,telegram_ip,Telegram,no-resolve
  - RULE-SET,Twitch,Twitch
  - RULE-SET,YouTube,YouTube
  - RULE-SET,Spotify,Spotify
  - RULE-SET,E-h,E-h
- - RULE-SET,myself,Proxy
- - RULE-SET,Download,DIRECT
- - RULE-SET,private,DIRECT
- - RULE-SET,SteamCN,DIRECT
- - RULE-SET,GameDownloadCN,DIRECT
- - RULE-SET,Direct,DIRECT
  - RULE-SET,US,US
  - RULE-SET,Emby,Emby
  - RULE-SET,Game,Game
@@ -380,7 +258,6 @@ rules:
  - RULE-SET,Microsoft,Microsoft
  - RULE-SET,Google,Google
  - RULE-SET,google_ip,Google,no-resolve
- - RULE-SET,Nintendo,Nintendo
  - RULE-SET,proxy,Proxy
  - RULE-SET,ProxyTest,select1
  - GEOIP,LAN,DIRECT,no-resolve
