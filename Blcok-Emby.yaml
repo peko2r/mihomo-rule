@@ -1,0 +1,4 @@
+payload:
+#jms
+  - DOMAIN,mini.jmsuper.com
+  - DOMAIN,nano.jmsuper.com
