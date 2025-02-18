@@ -39,9 +39,6 @@ payload:
   - DOMAIN,t.emby.pro
   - DOMAIN,drei.bgka.me
   - DOMAIN,s3.bgka.me
-#jms
-  - DOMAIN,mini.jmsuper.com
-  - DOMAIN,nano.jmsuper.com
 #star-cat
   - DOMAIN,flare.catlinks.co.uk
   - DOMAIN,xxx.887711.xyz
