@@ -36,3 +36,5 @@ payload:
   - DOMAIN,tp.m-team.cc
   - DOMAIN,webseed.nhentai.net
   - PROCESS-NAME,overwatch.exe
+  - PROCESS-NAME,Battle.net.exe
+  - PROCESS-NAME,OWNeacClient.exe
