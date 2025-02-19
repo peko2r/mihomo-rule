@@ -35,3 +35,4 @@ payload:
   - DOMAIN,cn.download.nvidia.com
   - DOMAIN,tp.m-team.cc
   - DOMAIN,webseed.nhentai.net
+  - PROCESS-NAME,overwatch.exe
