@@ -20,8 +20,6 @@ payload:
   - PROCESS-NAME,Plain Craft Launcher 2.exe
   - PROCESS-NAME,javaw.exe
   - PROCESS-NAME,RvRvpnGui.exe
-  - DOMAIN-KEYWORD,bitcomet
-  - PROCESS-NAME,qbittorrent.exe
   - PROCESS-NAME,SCUM.exe
   - PROCESS-NAME,scum_launcher.exe
   - PROCESS-NAME,leishenSdk.exe
