@@ -1,0 +1,80 @@
+payload:
+ #收束世界线
++.tv.worldline.space
+ #Nebula-Media
++.emby.nebula-media.org
+ #Plumber
++.emby.233988.xyz
++.nh.910427.xyz
++.poxi.233988.xyz
+ #misty
++.misty.cx
+ #卡戎
++.play.charontv.com
+ #hxd
++.hxd.as174.de
++.cf.bili.rip
++.emby.as174.de
+ #NyaMedia
++.emby.bangumi.ca
+103.177.137.228/32
+ #loser
++.cf.gtlx.org
+104.194.8.196/32
+ #放映厅
++.emby.9191001.xyz
+ #peach
++.embymv.link
+193.123.232.141/32
+168.138.45.100/32
+ #纸片人
++.embyplus.org
++.gd.9521732.xyz
++.hyonix.embyplus.org
+89.58.18.111/32
++.emby3.029902.xyz
+ #不给看
++.t.emby.pro
++.drei.bgka.me
++.s3.bgka.me
+ #star-cat
++.flare.catlinks.co.uk
++.xxx.887711.xyz
++.osccxw.starcat.eu.org
++.starcat-gshou.887711.xyz
++.wu2qu382uwb2y431-wxbki2.catlink.eu.org
++.shuigawd921hfs-ef27893hrsf.catlinks.co.uk
++.sefsehf3hiu2345ioj235.puddingcat.de
++.cdsalw2lw.catlinks.co.uk
+ #cc公益
++.cc.coemn.com
++.cc.embycc.link
++.dl.carryz.net
+ #终点站
++.pub1.emby.wtf
++.pub1cf.emby.wtf
++.pub1.term.wtf
++.pub2.emby.wtf
++.pub2cf.emby.wtf
++.pub2.term.wtf
++.pub3.emby.wtf
++.pub3cf.emby.wtf
++.pub3.term.wtf
+ #Pilipili
++.pilipili.club
++.css.pilipili.club:443
++.manga.pilipiliultra.com
+167.114.64.176/32
++.streamer.pilipiliultra.com
+ #特卡
++.emby.carlos.trade
++.emby.carlos.trade
++.cf.carlos.trade
++.us.carlos.trade
++.emby.carlos.trade
+ #Lyrebird
++.cdn.lyrebirdemby.com
+ #Tanhua
++.tanhuatv.site
+ #ikun
++.music.xxxh.de
