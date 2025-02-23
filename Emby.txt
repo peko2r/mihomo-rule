@@ -1,4 +1,3 @@
-payload:
  #收束世界线
 +.tv.worldline.space
  #Nebula-Media
