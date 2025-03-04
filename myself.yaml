@@ -18,3 +18,4 @@ payload:
   - DOMAIN,www.nodeseek.com
   - DOMAIN,wiki.repcz.link
   - DOMAIN,mcreadme.gitbook.io
+  - PROCESS-NAME,wsl.exe
