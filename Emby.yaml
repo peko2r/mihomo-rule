@@ -61,11 +61,9 @@ payload:
   - DOMAIN,pub3cf.emby.wtf
   - DOMAIN,pub3.term.wtf
 #Pilipili
-  - DOMAIN,pilipili.club
-  - DOMAIN,css.pilipili.club:443
+  - DOMAIN,emby.pilipiliultra.com:443
   - DOMAIN,manga.pilipiliultra.com
-  - IP-CIDR,167.114.64.176/32
-  - DOMAIN,streamer.pilipiliultra.com
+  - DOMAIN,emby-direct.pilipiliultra.com:443
 #特卡
   - DOMAIN,emby.carlos.trade
   - DOMAIN,emby.carlos.trade
