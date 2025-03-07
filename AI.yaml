@@ -2,6 +2,7 @@ payload:
   - DOMAIN,www.perplexity.ai
   - DOMAIN,pplx.ai
   - DOMAIN,admin.mistral.ai
+  - DOMAIN,console.mistral.ai
   - DOMAIN,mistral.ai
 #OpenAI
   - DOMAIN,openaiapi-site.azureedge.net
