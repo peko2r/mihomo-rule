@@ -1,6 +1,7 @@
 payload:
 #收束世界线
   - DOMAIN,tv.worldline.space
+  - IP-CIDR,195.128.100.146/32
 #Nebula-Media
   - DOMAIN,emby.nebula-media.org
 #Plumber
@@ -33,6 +34,7 @@ payload:
   - DOMAIN,hyonix.embyplus.org
   - IP-CIDR,89.58.18.111/32
   - DOMAIN,emby3.029902.xyz
+  - DOMAIN,stream.embyplus.org
 #不给看
   - DOMAIN,t.emby.pro
   - DOMAIN,drei.bgka.me
@@ -52,13 +54,10 @@ payload:
   - DOMAIN,dl.carryz.net
 #终点站
   - DOMAIN,pub1.emby.wtf
-  - DOMAIN,pub1cf.emby.wtf
   - DOMAIN,pub1.term.wtf
   - DOMAIN,pub2.emby.wtf
-  - DOMAIN,pub2cf.emby.wtf
   - DOMAIN,pub2.term.wtf
   - DOMAIN,pub3.emby.wtf
-  - DOMAIN,pub3cf.emby.wtf
   - DOMAIN,pub3.term.wtf
 #Pilipili
   - DOMAIN,emby.pilipiliultra.com:443
@@ -71,8 +70,10 @@ payload:
   - DOMAIN,cf.carlos.trade
   - DOMAIN,us.carlos.trade
   - DOMAIN,emby.carlos.trade
+  - IP-CIDR,185.233.106.103/32
 #Lyrebird
   - DOMAIN,cdn.lyrebirdemby.com
+  - IP-CIDR,188.172.228.65/32
 #Tanhua
   - DOMAIN,tanhuatv.site
 #ikun
