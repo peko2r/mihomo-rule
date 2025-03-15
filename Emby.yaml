@@ -60,8 +60,8 @@ payload:
   - DOMAIN,pub3.emby.wtf
   - DOMAIN,pub3.term.wtf
 #Pilipili
-  - DOMAIN,emby.pilipiliultra.com:443
-  - DOMAIN,emby-direct.pilipiliultra.com:443
+  - DOMAIN,emby.pilipiliultra.com
+  - DOMAIN,emby-direct.pilipiliultra.com
   - DOMAIN,streamer.pilipiliultra.com
   - DOMAIN,manga.pilipiliultra.com
 #特卡
