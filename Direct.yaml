@@ -38,3 +38,4 @@ payload:
   - PROCESS-NAME,OWNeacClient.exe
   - PROCESS-NAME,Agent.exe
   - PROCESS-NAME,deadlock.exe
+  - PROCESS-NAME,SplitFiction.exe
