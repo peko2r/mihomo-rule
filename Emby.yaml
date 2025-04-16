@@ -37,8 +37,7 @@ payload:
   - DOMAIN,stream.embyplus.org
 #不给看
   - DOMAIN,t.emby.pro
-  - DOMAIN,drei.bgka.me
-  - DOMAIN,s3.bgka.me
+  - DOMAIN,t.744444.xyz
 #star-cat
   - DOMAIN,flare.catlinks.co.uk
   - DOMAIN,xxx.887711.xyz
