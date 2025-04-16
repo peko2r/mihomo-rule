@@ -39,3 +39,4 @@ payload:
   - PROCESS-NAME,Agent.exe
   - PROCESS-NAME,deadlock.exe
   - PROCESS-NAME,SplitFiction.exe
+  - PROCESS-NAME,WeChat.exe
