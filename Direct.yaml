@@ -41,3 +41,4 @@ payload:
   - PROCESS-NAME,SplitFiction.exe
   - PROCESS-NAME,WeChat.exe
   - DOMAIN,turnjs.629957.xyz
+  - PROCESS-NAME,astral.exe
