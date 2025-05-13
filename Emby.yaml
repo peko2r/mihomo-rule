@@ -26,8 +26,7 @@ payload:
   - DOMAIN,emby.9191001.xyz
 #peach
   - DOMAIN,embymv.link
-  - IP-CIDR,193.123.232.141/32
-  - IP-CIDR,168.138.45.100/32
+  - IP-CIDR,152.53.81.68/32
 #纸片人
   - DOMAIN,embyplus.org
   - DOMAIN,gd.9521732.xyz
