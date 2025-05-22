@@ -50,6 +50,7 @@ payload:
   - DOMAIN,cc.coemn.com
   - DOMAIN,cc.embycc.link
   - DOMAIN,dl.carryz.net
+  - IP-CIDR,146.56.174.58/32
 #终点站
   - DOMAIN,pub1.emby.wtf
   - DOMAIN,pub1.term.wtf
