@@ -1,16 +1,10 @@
 payload:
-  - DOMAIN,pphimalayanrt.com
   - PROCESS-NAME,gamingservices.exe
   - PROCESS-NAME,RiotClientServices.exe
   - PROCESS-NAME,完美世界竞技平台.exe
   - PROCESS-NAME,cs2.exe
   - DOMAIN-KEYWORD,valorant
   - DOMAIN-KEYWORD,Riot
-  - DOMAIN,ipv4.egdownload.fastly-edge.com
-  - IP-CIDR,115.238.185.234/32
-  - IP-CIDR,23.49.104.184/32
-  - DOMAIN,ssl.ptlogin2.qq.com
-  - DOMAIN,dhs752jdkpq3ns.catlinks.co.uk
   - PROCESS-NAME,TASLogin64.exe
   - PROCESS-NAME,NMS.exe
   - PROCESS-NAME,CrossProxy.exe
@@ -24,15 +18,10 @@ payload:
   - PROCESS-NAME,scum_launcher.exe
   - PROCESS-NAME,leishenSdk.exe
   - PROCESS-NAME,GameBarPresenceWriter.exe
-  - DOMAIN,tdck.fun
   - PROCESS-NAME,QQ.exe
   - PROCESS-NAME,WeMeetApp.exe
   - PROCESS-NAME,WMExternal.exe
   - PROCESS-NAME,HeyboxChat.exe
-  - DOMAIN,service-aggregation-layer-subs.juno.ea.com
-  - DOMAIN,cn.download.nvidia.com
-  - DOMAIN,tp.m-team.cc
-  - DOMAIN,webseed.nhentai.net
   - PROCESS-NAME,overwatch.exe
   - PROCESS-NAME,Battle.net.exe
   - PROCESS-NAME,OWNeacClient.exe
@@ -40,5 +29,4 @@ payload:
   - PROCESS-NAME,deadlock.exe
   - PROCESS-NAME,SplitFiction.exe
   - PROCESS-NAME,WeChat.exe
-  - DOMAIN,turnjs.629957.xyz
   - PROCESS-NAME,astral.exe
