@@ -19,9 +19,6 @@ payload:
 #NyaMedia
   - DOMAIN,emby.bangumi.ca
   - IP-CIDR,103.177.137.228/32
-#loser
-  - DOMAIN,cf.gtlx.org
-  - IP-CIDR,104.194.8.196/32
 #放映厅
   - DOMAIN,emby.9191001.xyz
 #peach

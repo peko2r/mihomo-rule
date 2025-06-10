@@ -2,3 +2,6 @@ payload:
 #jms
   - DOMAIN,mini.jmsuper.com
   - DOMAIN,nano.jmsuper.com
+#loser
+  - DOMAIN,cf.gtlx.org
+  - IP-CIDR,104.194.8.196/32
