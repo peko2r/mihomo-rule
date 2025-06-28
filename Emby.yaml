@@ -12,10 +12,6 @@ payload:
   - DOMAIN,misty.cx
 #卡戎
   - DOMAIN,play.charontv.com
-#hxd
-  - DOMAIN,hxd.as174.de
-  - DOMAIN,cf.bili.rip
-  - DOMAIN,emby.as174.de
 #NyaMedia
   - DOMAIN,emby.bangumi.ca
   - IP-CIDR,103.177.137.228/32

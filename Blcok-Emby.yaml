@@ -5,3 +5,7 @@ payload:
 #loser
   - DOMAIN,cf.gtlx.org
   - IP-CIDR,104.194.8.196/32
+#hxd
+  - DOMAIN,hxd.as174.de
+  - DOMAIN,cf.bili.rip
+  - DOMAIN,emby.as174.de
