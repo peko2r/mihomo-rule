@@ -3,6 +3,7 @@ payload:
   - DOMAIN,hxd.as174.de
   - DOMAIN,cf.bili.rip
   - DOMAIN,emby.as174.de
+  - DOMAIN,emby.as174.com
 #收束世界线
   - DOMAIN,tv.worldline.space
   - IP-CIDR,195.128.100.146/32
