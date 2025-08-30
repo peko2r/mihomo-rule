@@ -62,10 +62,8 @@ payload:
   - DOMAIN,manga.pilipiliultra.com
 #特卡
   - DOMAIN,emby.carlos.trade
-  - DOMAIN,emby.carlos.trade
   - DOMAIN,cf.carlos.trade
   - DOMAIN,us.carlos.trade
-  - DOMAIN,emby.carlos.trade
   - IP-CIDR,185.233.106.103/32
 #Lyrebird
   - DOMAIN,cdn.lyrebirdemby.com
