@@ -58,7 +58,7 @@ payload:
   - DOMAIN,pub3.term.wtf
 #Pilipili
   - DOMAIN,emby.pilipiliultra.com
-  - DOMAIN,streamer.pilipiliultra.com
+  - DOMAIN,streamer-cf.pilipiliultra.com
   - DOMAIN,manga.pilipiliultra.com
 #特卡
   - DOMAIN,emby.carlos.trade
