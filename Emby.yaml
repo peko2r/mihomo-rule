@@ -15,8 +15,6 @@ payload:
   - DOMAIN,poxi.233988.xyz
 #misty
   - DOMAIN,misty.cx
-#卡戎
-  - DOMAIN,play.charontv.com
 #NyaMedia
   - DOMAIN,emby.bangumi.ca
   - IP-CIDR,103.177.137.228/32
@@ -64,10 +62,6 @@ payload:
 #Lyrebird
   - DOMAIN,cdn.lyrebirdemby.com
   - IP-CIDR,188.172.228.65/32
-#Tanhua
-  - DOMAIN,tanhuatv.site
-#ikun
-  - DOMAIN,music.xxxh.de
 #DPX
   - DOMAIN,emby1.69yun69.com
 #SNTP Media Lite

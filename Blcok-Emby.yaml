@@ -4,5 +4,4 @@ payload:
   - DOMAIN,nano.jmsuper.com
   - IP-CIDR,104.21.65.211/32
 #loser
-  - DOMAIN,cf.gtlx.org
-  - IP-CIDR,104.194.8.196/32
+  - DOMAIN,wiki.xxlb.net
