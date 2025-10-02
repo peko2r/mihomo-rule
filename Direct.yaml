@@ -30,3 +30,4 @@ payload:
   - PROCESS-NAME,SplitFiction.exe
   - PROCESS-NAME,WeChat.exe
   - PROCESS-NAME,astral.exe
+  - IP-CIDR,180.97.214.67/32
