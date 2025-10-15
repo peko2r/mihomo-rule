@@ -1,7 +1,4 @@
 payload:
-#takov ip
-  - IP-CIDR,103.85.87.157/32
-  
   - DOMAIN-KEYWORD,eft-project
   - DOMAIN-KEYWORD,eft-store
   - PROCESS-NAME,gamingservices.exe
