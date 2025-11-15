@@ -3,5 +3,7 @@ payload:
   - DOMAIN-KEYWORD,
   - DOMAIN,mc.yandex.ru
   - DOMAIN,launcher.escapefromtarkov.com
+  - DOMAIN,www.escapefromtarkov.com
+  - DOMAIN,profile.tarkov.com
   - DOMAIN-KEYWORD,eft-project
   - DOMAIN-KEYWORD,eft-store
