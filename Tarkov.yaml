@@ -1,0 +1,7 @@
+payload:
+  - PROCESS-NAME,BsgLauncher.exe
+  - DOMAIN-KEYWORD,
+  - DOMAIN,mc.yandex.ru
+  - DOMAIN,launcher.escapefromtarkov.com
+  - DOMAIN-KEYWORD,eft-project
+  - DOMAIN-KEYWORD,eft-store
