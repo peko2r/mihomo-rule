@@ -4,4 +4,4 @@ payload:
   - DOMAIN,ping0.cc
   - DOMAIN,proxydetect.live
   - DOMAIN,ipv4.ping0.cc
-  - DOMAIN,ipdata.co
+  - DOMAIN-KEYWORD,ipdata.co
