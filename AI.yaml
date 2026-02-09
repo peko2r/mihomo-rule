@@ -4,6 +4,8 @@ payload:
   - DOMAIN,admin.mistral.ai
   - DOMAIN,console.mistral.ai
   - DOMAIN,mistral.ai
+  - DOMAIN-SUFFIX,claude.ai
+  - DOMAIN-SUFFIX,claude.com
 #OpenAI
   - DOMAIN,openaiapi-site.azureedge.net
   - DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
