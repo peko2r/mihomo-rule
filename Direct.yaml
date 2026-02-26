@@ -1,4 +1,5 @@
 payload:
+  - DOMAIN,elysia.h-e.top
   - PROCESS-NAME,gamingservices.exe
   - PROCESS-NAME,RiotClientServices.exe
   - PROCESS-NAME,完美世界竞技平台.exe
