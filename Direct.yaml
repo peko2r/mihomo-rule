@@ -1,4 +1,5 @@
 payload:
+  - DOMAIN,x.ainiaini.xyz
   - DOMAIN,elysia.h-e.top
   - PROCESS-NAME,gamingservices.exe
   - PROCESS-NAME,RiotClientServices.exe
