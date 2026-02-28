@@ -20,3 +20,4 @@ payload:
   - DOMAIN,openai.api-test.us.ci
   - DOMAIN,new.api-test.us.ci
   - DOMAIN,freeapi.dgbmc.top
+  - DOMAIN,x.ainiaini.xyz
