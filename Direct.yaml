@@ -1,5 +1,6 @@
 payload:
   - DOMAIN,elysia.h-e.top
+  - DOMAIN,aigw-gzgy2.cucloud.cn
   - PROCESS-NAME,gamingservices.exe
   - PROCESS-NAME,RiotClientServices.exe
   - PROCESS-NAME,完美世界竞技平台.exe
