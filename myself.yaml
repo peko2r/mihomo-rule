@@ -27,3 +27,4 @@ payload:
   - DOMAIN-KEYWORD,team.wzw.us.ci
   - DOMAIN-KEYWORD,suburl.v1.mk
   - DOMAIN-KEYWORD,mail.awsl.cc.cd
+  - DOMAIN,api.chengmo.cc.cd
