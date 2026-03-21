@@ -37,3 +37,5 @@ payload:
   - PROCESS-NAME,5EClient.exe
   - PROCESS-NAME,GTA5_Enhanced.exe
   - PROCESS-NAME,SlayTheSpire2.exe
+  - DOMAIN-SUFFIX,fsfsffs.dpdns.org
+  - DOMAIN-SUFFIX,trycloudflare.com
