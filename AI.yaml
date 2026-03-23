@@ -9,7 +9,7 @@ payload:
   - DOMAIN-KEYWORD,claude
   - DOMAIN-SUFFIX,auth0.com
   - DOMAIN-SUFFIX,sentinel.openai.com
-  - DOMAIN-SUFFIX,cloudflare.com
+  - DOMAIN,cloudflare.com/cdn-cgi/trace
 
 #OpenAI
   - DOMAIN-SUFFIX,openaiapi-site.azureedge.net
