@@ -30,3 +30,6 @@ payload:
   - DOMAIN,api.chengmo.cc.cd
   - DOMAIN,peko2r.cc.cd
   - DOMAIN,api.aillm.de5.net
+  - DOMAIN-SUFFIX,wispbyte.com
+  - DOMAIN-SUFFIX,challenges.cloudflare.com
+  - DOMAIN,wispbyte.com
