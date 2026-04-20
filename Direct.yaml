@@ -39,6 +39,4 @@ payload:
   - PROCESS-NAME,SlayTheSpire2.exe
   - PROCESS-NAME,cloudflared.exe
   - DOMAIN-SUFFIX,fsfsffs.dpdns.org
-  - DOMAIN-SUFFIX,trycloudflare.com
-  - DOMAIN,www.peko2r.cc.cd,DIRECT
   - DOMAIN-SUFFIX,cfargotunnel.com,DIRECT
