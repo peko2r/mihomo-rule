@@ -40,3 +40,5 @@ payload:
   - PROCESS-NAME,cloudflared.exe
   - DOMAIN-SUFFIX,fsfsffs.dpdns.org
   - DOMAIN-SUFFIX,cfargotunnel.com,DIRECT
+  - PROCESS-NAME,Battle.net.exe
+  - PROCESS-NAME,Diablo IV.exe
