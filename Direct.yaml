@@ -42,3 +42,4 @@ payload:
   - DOMAIN-SUFFIX,cfargotunnel.com,DIRECT
   - PROCESS-NAME,Battle.net.exe
   - PROCESS-NAME,Diablo IV.exe
+  - PROCESS-NAME,Agent.exe
