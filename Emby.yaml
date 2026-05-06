@@ -4,15 +4,6 @@ payload:
   - DOMAIN,cf.bili.rip
   - DOMAIN,emby.as174.de
   - DOMAIN,emby.as174.com
-#收束世界线
-  - DOMAIN,tv.worldline.space
-  - IP-CIDR,195.128.100.146/32
-#Nebula-Media
-  - DOMAIN,emby.nebula-media.org
-#Plumber
-  - DOMAIN,emby.233988.xyz
-  - DOMAIN,nh.910427.xyz
-  - DOMAIN,poxi.233988.xyz
 #misty
   - DOMAIN,misty.cx
 #NyaMedia
@@ -26,45 +17,12 @@ payload:
 #纸片人
   - DOMAIN,embyplus.org
   - DOMAIN,emby4.029902.xyz
-#不给看
-  - DOMAIN,t.emby.pro
-  - DOMAIN,t.744444.xyz
-#star-cat
-  - DOMAIN,flare.catlinks.co.uk
-  - DOMAIN,xxx.887711.xyz
-  - DOMAIN,osccxw.starcat.eu.org
-  - DOMAIN,starcat-gshou.887711.xyz
-  - DOMAIN,wu2qu382uwb2y431-wxbki2.catlink.eu.org
-  - DOMAIN,shuigawd921hfs-ef27893hrsf.catlinks.co.uk
-  - DOMAIN,sefsehf3hiu2345ioj235.puddingcat.de
-  - DOMAIN,cdsalw2lw.catlinks.co.uk
 #cc公益
   - DOMAIN,cc.coemn.com
   - DOMAIN,cc.embycc.link
   - DOMAIN,lt1.carryz.net
   - IP-CIDR,146.56.174.58/32
-#终点站
-  - DOMAIN,pub1.emby.wtf
-  - DOMAIN,pub1.term.wtf
-  - DOMAIN,pub2.emby.wtf
-  - DOMAIN,pub2.term.wtf
-  - DOMAIN,pub3.emby.wtf
-  - DOMAIN,pub3.term.wtf
 #Pilipili
   - DOMAIN,emby.pilipiliultra.com
   - DOMAIN,streamer-cf.pilipiliultra.com
   - DOMAIN,manga.pilipiliultra.com
-#特卡
-  - DOMAIN,emby.carlos.trade
-  - DOMAIN,cf.carlos.trade
-  - DOMAIN,us.carlos.trade
-  - IP-CIDR,185.233.106.103/32
-#Lyrebird
-  - DOMAIN,cdn.lyrebirdemby.com
-  - IP-CIDR,188.172.228.65/32
-#DPX
-  - DOMAIN,emby1.69yun69.com
-#SNTP Media Lite
-  - DOMAIN,lite.cn2gias.uk
-#zoxfree
-  - DOMAIN,zoxfree.3767483.xyz
