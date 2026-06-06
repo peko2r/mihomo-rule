@@ -33,4 +33,3 @@ payload:
   - DOMAIN-SUFFIX,wispbyte.com
   - DOMAIN-SUFFIX,challenges.cloudflare.com
   - DOMAIN,wispbyte.com
-  - DOMAIN-SUFFIX,login.tailscale.com
