@@ -1,5 +1,4 @@
 payload:
-  - DOMAIN-KEYWORD,tailscale
   - DOMAIN,elysia.h-e.top
   - DOMAIN,aigw-gzgy2.cucloud.cn
   - PROCESS-NAME,gamingservices.exe
