@@ -2,7 +2,10 @@ payload:
 #jms
   - DOMAIN,mini.jmsuper.com
   - DOMAIN,nano.jmsuper.com
+  - DOMAIN,mini.cr18.eu.org
+  - DOMAIN,nano.cr18.eu.org
   - IP-CIDR,104.21.65.211/32
+
 #loser
   - DOMAIN,wiki.xxlb.net
 #终点站
