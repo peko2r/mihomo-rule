@@ -17,6 +17,7 @@ payload:
 #纸片人
   - DOMAIN,embyplus.org
   - DOMAIN,emby4.029902.xyz
+  - DOMAIN,stream.embyplus.org
 #cc公益
   - DOMAIN,cc.coemn.com
   - DOMAIN,cc.embycc.link
