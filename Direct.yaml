@@ -2,12 +2,14 @@ payload:
   - DOMAIN-KEYWORD,tailscale
   - DOMAIN,elysia.h-e.top
   - DOMAIN,aigw-gzgy2.cucloud.cn
+  - DOMAIN-KEYWORD,valorant
+  - DOMAIN-KEYWORD,Riot
+  - DOMAIN,fsend.cn,DIRECT
+  - DOMAIN,international-gfe.download.nvidia.com,DIRECT
   - PROCESS-NAME,gamingservices.exe
   - PROCESS-NAME,RiotClientServices.exe
   - PROCESS-NAME,完美世界竞技平台.exe
   - PROCESS-NAME,cs2.exe
-  - DOMAIN-KEYWORD,valorant
-  - DOMAIN-KEYWORD,Riot
   - PROCESS-NAME,TASLogin64.exe
   - PROCESS-NAME,NMS.exe
   - PROCESS-NAME,CrossProxy.exe
