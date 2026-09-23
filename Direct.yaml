@@ -4,7 +4,7 @@ payload:
   - DOMAIN,aigw-gzgy2.cucloud.cn
   - DOMAIN-KEYWORD,valorant
   - DOMAIN-KEYWORD,Riot
-  - DOMAIN,test-ipv6.com,DIRECT
+  - DOMAIN-SUFFIX,test-ipv6.com,DIRECT
   - DOMAIN,fsend.cn,DIRECT
   - DOMAIN,international-gfe.download.nvidia.com,DIRECT
   - PROCESS-NAME,gamingservices.exe
