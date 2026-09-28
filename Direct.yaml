@@ -43,7 +43,7 @@ payload:
   - PROCESS-NAME,SlayTheSpire2.exe
   - PROCESS-NAME,cloudflared.exe
   - DOMAIN-SUFFIX,fsfsffs.dpdns.org
-  - DOMAIN-SUFFIX,cfargotunnel.com,DIRECT
+  - DOMAIN-SUFFIX,cfargotunnel.com
   - PROCESS-NAME,Battle.net.exe
   - PROCESS-NAME,Diablo IV.exe
   - PROCESS-NAME,Agent.exe
