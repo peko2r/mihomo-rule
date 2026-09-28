@@ -1,0 +1,39 @@
+payload:
+  - PROCESS-NAME,Battle.net.exe
+  - PROCESS-NAME,Diablo IV.exe
+  - PROCESS-NAME,Agent.exe
+  - PROCESS-NAME,gamingservices.exe
+  - PROCESS-NAME,RiotClientServices.exe
+  - PROCESS-NAME,完美世界竞技平台.exe
+  - PROCESS-NAME,cs2.exe
+  - PROCESS-NAME,TASLogin64.exe
+  - PROCESS-NAME,NMS.exe
+  - PROCESS-NAME,CrossProxy.exe
+  - PROCESS-NAME,UnrealCEFSubProcess.exe
+  - PROCESS-NAME,vgtray.exe
+  - PROCESS-NAME,RvControlSvc.exe
+  - PROCESS-NAME,Plain Craft Launcher 2.exe
+  - PROCESS-NAME,javaw.exe
+  - PROCESS-NAME,RvRvpnGui.exe
+  - PROCESS-NAME,SCUM.exe
+  - PROCESS-NAME,scum_launcher.exe
+  - PROCESS-NAME,leishenSdk.exe
+  - PROCESS-NAME,GameBarPresenceWriter.exe
+  - PROCESS-NAME,QQ.exe
+  - PROCESS-NAME,WeMeetApp.exe
+  - PROCESS-NAME,WMExternal.exe
+  - PROCESS-NAME,HeyboxChat.exe
+  - PROCESS-NAME,overwatch.exe
+  - PROCESS-NAME,Battle.net.exe
+  - PROCESS-NAME,OWNeacClient.exe
+  - PROCESS-NAME,Agent.exe
+  - PROCESS-NAME,deadlock.exe
+  - PROCESS-NAME,SplitFiction.exe
+  - PROCESS-NAME,WeChat.exe
+  - PROCESS-NAME,astral.exe
+  - PROCESS-NAME,selfcheck.exe
+  - PROCESS-NAME,Bucky64.exe
+  - PROCESS-NAME,5EClient.exe
+  - PROCESS-NAME,GTA5_Enhanced.exe
+  - PROCESS-NAME,SlayTheSpire2.exe
+  - PROCESS-NAME,cloudflared.exe
