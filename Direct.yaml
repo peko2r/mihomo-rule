@@ -4,10 +4,10 @@ payload:
   - DOMAIN,aigw-gzgy2.cucloud.cn
   - DOMAIN-KEYWORD,valorant
   - DOMAIN-KEYWORD,Riot
-  - DOMAIN-SUFFIX,test-ipv6.com,DIRECT
+  - DOMAIN-SUFFIX,test-ipv6.com
   - DOMAIN,fsend.cn,DIRECT
-  - DOMAIN,international-gfe.download.nvidia.com,DIRECT
+  - DOMAIN,international-gfe.download.nvidia.com
   - DOMAIN-SUFFIX,fsfsffs.dpdns.org
   - DOMAIN-SUFFIX,cfargotunnel.com
   - DOMAIN-SUFFIX,argotunnel.com
-  - DOMAIN-SUFFIX,peko2r.cc.cd
+  - AND,((DOMAIN-SUFFIX,peko2r.cc.cd),(NOT,((DOMAIN-SUFFIX,luci.peko2r.cc.cd))))
