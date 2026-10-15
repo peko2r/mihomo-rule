@@ -5,7 +5,7 @@ payload:
   - DOMAIN-KEYWORD,valorant
   - DOMAIN-KEYWORD,Riot
   - DOMAIN-SUFFIX,test-ipv6.com
-  - DOMAIN,fsend.cn,DIRECT
+  - DOMAIN,fsend.cn
   - DOMAIN,international-gfe.download.nvidia.com
   - DOMAIN-SUFFIX,fsfsffs.dpdns.org
   - DOMAIN-SUFFIX,cfargotunnel.com
