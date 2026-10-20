@@ -10,5 +10,3 @@ payload:
   - DOMAIN-SUFFIX,fsfsffs.dpdns.org
   - DOMAIN-SUFFIX,cfargotunnel.com
   - DOMAIN-SUFFIX,argotunnel.com
-  - DOMAIN-SUFFIX,peko2r.cc.cd
- # - AND,((DOMAIN-SUFFIX,peko2r.cc.cd),(NOT,((DOMAIN-SUFFIX,luci.peko2r.cc.cd))))
