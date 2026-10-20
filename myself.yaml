@@ -1,1 +1,3 @@
 payload:
+  - DOMAIN-SUFFIX,peko2r.cc.cd
+ # - AND,((DOMAIN-SUFFIX,peko2r.cc.cd),(NOT,((DOMAIN-SUFFIX,luci.peko2r.cc.cd))))
