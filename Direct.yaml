@@ -11,3 +11,4 @@ payload:
   - DOMAIN-SUFFIX,cfargotunnel.com
   - DOMAIN-SUFFIX,argotunnel.com
   - DOMAIN-SUFFIX,ctaiot.com
+  - IP-CIDR6,2604:4300:a:28f:3:3586:187d:8d61/128,DIRECT,no-resolve
